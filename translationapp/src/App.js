@@ -72,6 +72,18 @@ class App extends Component {
   }
 
   render(){
+    const cards = this.state.english.map(function(word, index){
+       return(
+        <div key={`word-wrapper-${index}`} className="words">
+          <CardContainer 
+            key={`word-${index}`}
+            word={word}
+            tranlslation={this.state.translationInput}
+          />
+        </div>
+      );
+    },this);
+
     return(
       <div className="App">
         <div className="header">
@@ -89,7 +101,7 @@ class App extends Component {
             <button className="submitbtn" onClick={this.handleTranLanguageClick}>Submit</button>
           </section>
         </div>
-        <CardContainer />
+        {cards}
       </div>
     );
   }

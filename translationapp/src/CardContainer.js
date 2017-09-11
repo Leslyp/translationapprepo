@@ -5,11 +5,11 @@ function CardContainer(props){
    	<div className="showCard">
    		<section class="inputCard">
 	      <label for="inputTranslation"> Card:
-	      	<p>(placeholder for word)</p>
+	      	<p>{props.word}</p>
 	      </label>
 	    </section>
 	    <section className="inputTranslation">
-	      <label htmlFor="inputTranslation">(placeholder for language) Translation:
+	      <label htmlFor="inputTranslation">(language placeholder) Translation:
 	      	<input type="text" id="inputTranslation" name="inputTranslation" />
 	      </label>
 	      <button className="submitbtn" >Submit</button>
