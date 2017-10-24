@@ -4,17 +4,40 @@ body {
   font-family: sans-serif;
   background: lightblue;
   margin: 5%;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.header {
-	text-shadow: 2px 2px 2px grey;
+h1 {
+	color: #2A4E5D;
 }
 
 .userInput section {
-	margin-bottom: 45px;
+	margin: 5%;
 }
+
 .showCard {
   border: 2px solid;
   display: inline-block;
-  margin-top: 45px;
+  margin: 45px;
+  padding: 2%;
+  background-image: url("../src/lib/img/indexCard.png");
+  background-size: 100% 120%; 
+}
+
+button {
+	margin: 6%;
+	display: inline-block;
+	border-radius: 6px;
+	background-color: #38758F;
+	color: white;
+	border: 1px solid black;
+}
+
+button:hover {
+	background-color: #6C8895;
+}
+
+#resetBtn {
+	margin: 1%;
 }
